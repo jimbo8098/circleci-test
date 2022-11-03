@@ -12,7 +12,9 @@ jobs:
       - image: cimg/base:stable
       - image: mysql
       - image: nginx
-      
+        environment:
+          MYSQL_ROOT_PASSWORD: toor
+
     # Add steps to the job
     # See: https://circleci.com/docs/2.0/configuration-reference/#steps
     steps:
